@@ -1,0 +1,51 @@
+name: cine_xfers
+description: A new Flutter application.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  device_preview: ^0.7.4
+  connectivity: ^3.0.6
+  dio: ^4.0.0
+  equatable: ^2.0.3
+  get: ^4.3.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+
+fonts:
+  - family: RatBold
+    fonts:
+      - asset: assets/fonts/Montserrat-Bold.ttf
+
+  - family: RatRegular
+    fonts:
+      - asset: assets/fonts/Montserrat-Regular.ttf
+
+  - family: RatMedium
+    fonts:
+      - asset: assets/fonts/Montserrat-Medium.ttf
+
+  - family: ArBold
+    fonts:
+      - asset: assets/fonts/ArBold.ttf
+
+  - family: ArRegular
+    fonts:
+      - asset: assets/fonts/ArRegular.ttf
