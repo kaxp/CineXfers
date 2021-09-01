@@ -1,4 +1,4 @@
-import 'package:cine_xfers/config/flavour_config.dart';
+import '../../config/flavour_config.dart';
 
 class Endpoints {
   Endpoints._();
@@ -6,8 +6,14 @@ class Endpoints {
   // base url
   static String baseUrl = FlavorConfig.baseUrl();
 
+  // api key
+  static String apiKey = '6753d9119b9627493ae129f3c3c99151';
+
   // poster url
   static String posterUrl = FlavorConfig.posterUrl();
+
+  // banner url
+  static String bannerurl = FlavorConfig.bannerUrl();
 
   // receiveTimeout
   static const int receiveTimeout = 15000;

@@ -1,10 +1,11 @@
 enum Flavor { DEVELOPMENT, PRODUCTION, QA }
 
 class FlavorValues {
-  FlavorValues({required this.baseUrl, required this.posterUrl});
+  FlavorValues({required this.baseUrl, required this.posterUrl, required this.bannerUrl});
 
   final String baseUrl;
   final String posterUrl;
+  final String bannerUrl;
   //Add other flavor specific values, e.g database name
 
 }
@@ -29,6 +30,8 @@ class FlavorConfig {
   static String baseUrl() => _instance!.values.baseUrl;
 
   static String posterUrl() => _instance!.values.posterUrl;
+
+   static String bannerUrl() => _instance!.values.bannerUrl;
 
   static bool isProduction() => _instance!.flavor == Flavor.PRODUCTION;
 

@@ -1,7 +1,6 @@
-import 'package:cine_xfers/models/movies.dart';
-import 'package:cine_xfers/network/constants/endpoints.dart';
-
 import '../dio_client.dart';
+import '../../models/movies.dart';
+import '../../network/constants/endpoints.dart';
 
 class MoviesApi {
   MoviesApi._internal();
@@ -11,9 +10,15 @@ class MoviesApi {
   DioClient _networkClient = DioClient.instance;
 
   /// Returns list of post in response
-  Future<Movies> getMovies() async {
+  Future<Movies> getMovies(int pageIndex, int pageSize, String query) async {
     try {
-      final res = await _networkClient.get(Endpoints.getPosts);
+      var queryParam = {
+        'api_key': Endpoints.apiKey,
+        'query': query,
+        'page': pageIndex == 0 ? 1 : pageIndex,
+      };
+      final res = await _networkClient.get(Endpoints.getPosts,
+          queryParameters: queryParam);
       return Movies.fromJson(res);
     } catch (e) {
       throw e;

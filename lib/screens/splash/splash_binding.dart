@@ -1,6 +1,12 @@
 import 'package:get/get.dart';
 
-class MyPageBinding implements Bindings {
+import '../../components/organisms/drawer/cine_drawer_controller.dart';
+import '../../screens/splash/splash_controller.dart';
+
+class SplashBinding implements Bindings {
   @override
-  void dependencies() {}
+  void dependencies() {
+    Get.lazyPut<SplashController>(() => SplashController());
+    Get.lazyPut<CineDrawerController>(() => CineDrawerController());
+  }
 }

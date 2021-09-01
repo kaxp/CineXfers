@@ -6,7 +6,7 @@ import 'config/flavour_config.dart';
 void main() {
   FlavorConfig(
       flavor: Flavor.PRODUCTION,
-      values: FlavorValues(baseUrl: '', posterUrl: ''));
-
+      values: FlavorValues(baseUrl: '', posterUrl: '', bannerUrl: ''));
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(App());
 }

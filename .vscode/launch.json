@@ -5,11 +5,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "cine_xfers",
-      "request": "launch",
-      "type": "dart"
-    },
-    {
       "name": "cine_xfers-Dev",
       "request": "launch",
       "type": "dart",
@@ -25,6 +20,15 @@
       "flutterMode": "release",
       "program": "lib/main_production.dart",
       "args": ["--flavor", "production"]
+    },
+
+    {
+      "name": "cine_xfers-Dashbook",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "program": "lib/main_dashbook.dart",
+      "args": ["--flavor", "development"]
     }
   ]
 }
