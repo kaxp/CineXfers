@@ -21,7 +21,7 @@ Steps for running the application-
 2. run   `flutter pub get`
 3. For launching the debug app select `cine_xfers-Dev` from _run and debug_ tab in vs code or using cli with commands shown in Step 4
 4. For debug build on development run  `flutter run --flavor development -t lib/main_development.dart`
-  - Similarly for production and qa run, change the development to _production_ and _qa_ respectively in above command. Note: In this app the development environment is only active.
+  - Similarly for production and qa run, change the development to _production_ and _qa_ respectively in above command and also change the entry point i.e _main_prodcution.dart_ or _main_qa.dart_. Note: In this app the development environment is only active.
 
 - For running the widget testing run `flutter run  --flavor development -t lib/main_dashbook.dart` command or select `cine_xfers-Dashbook` configuration on _run and debug_ tab in vs code.
 - For running the unit test run `flutter test test/movies_api_test.dart` command
