@@ -12,7 +12,7 @@ This application includes
 - Navigation - [Get](https://pub.dev/packages/get)
 - Localization - [intl](https://pub.dev/packages/intl)
 - Model classes - [Equatable](https://pub.dev/packages/equatable)
-- Widget testing - [dashbook](https://pub.dev/packages/dashbook)
+- Common widget showcase - [dashbook](https://pub.dev/packages/dashbook)
 - Unit testing - flutter_test
 - Http client - [dio](https://pub.dev/packages/dio)
 
