@@ -8,7 +8,8 @@ This application is developed on Flutter 2.2.3 in Stable channel.
 This application includes
 - Android Flavor setup (development, production and qa)
 - State-management- [Get](https://pub.dev/packages/get)
-- Architecture pattern - using GetxController
+- Design pattern - Atomic design pattern
+- Architecture pattern - MVVM
 - Navigation - [Get](https://pub.dev/packages/get)
 - Localization - [intl](https://pub.dev/packages/intl)
 - Model classes - [Equatable](https://pub.dev/packages/equatable)
