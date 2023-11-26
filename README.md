@@ -1,14 +1,24 @@
 # cine_xfers
-
-## Getting Started
-
 This application is developed on Flutter 2.2.3 in Stable channel.
-- Tested the application using mac and ubuntu systems.
 
-This application includes
-- Android Flavor setup (development, production and qa)
+## Objective
+1. Fetch a list of movies from this URL
+http://api.themoviedb.org/3/search/movie?api_key=6753d9119b9627493ae129f3c3c99151&query=superman&page=1
+ 
+2. Poster (size: w92, w185,w500)
+http://image.tmdb.org/t/p/w92/2DtPSyODKWXluIRV7PVru0SSzja.jpg
+ 
+3. Display result in ListView or GridView. The list would have the following rows Movie Image, Movie Name, Release date, Full description/Overview
+ 
+4. Tapping on the cell should display the detail screen.
+ 
+5. Pagination: when the user reaches the bottom of the list, it should load the second page if available.
+
+
+## Project Architecture
+- Android Flavors (development, production and qa)
 - State-management- [Get](https://pub.dev/packages/get)
-- Design pattern - Atomic design pattern
+- Design pattern - [Atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/#:~:text=Atomic%20design%20is%20atoms%2C%20molecules,parts%20at%20the%20same%20time.)
 - Architecture pattern - MVVM
 - Navigation - [Get](https://pub.dev/packages/get)
 - Localization - [intl](https://pub.dev/packages/intl)
