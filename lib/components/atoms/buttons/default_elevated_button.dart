@@ -4,8 +4,7 @@ import '../../../components/atoms/typography/header2.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_fonts.dart';
 
-class DefaultElevatedButton extends StatelessWidget
-    implements PreferredSizeWidget {
+class DefaultElevatedButton extends StatelessWidget implements PreferredSizeWidget {
   final String? title;
   final Function? onPressed;
   final Color? primaryColor;
@@ -19,9 +18,8 @@ class DefaultElevatedButton extends StatelessWidget
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          primary: primaryColor ?? AppColors.redColor,
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+          backgroundColor: primaryColor ?? AppColors.redColor,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
         ),
         onPressed: () => onPressed!(),
         child: Header2(

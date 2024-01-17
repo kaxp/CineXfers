@@ -36,7 +36,7 @@ class Header4 extends StatelessWidget {
         textAlign: textAlign,
         maxLines: maxLines,
         overflow: textOverflow,
-        style: Theme.of(context).textTheme.headline4?.copyWith(
+        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
             color: color ?? AppColors.blackColor,
             height: height,
             fontWeight: fontWeight,

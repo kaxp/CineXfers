@@ -27,7 +27,7 @@ class Button extends StatelessWidget {
     return Text(title,
         textAlign: textAlign,
         maxLines: maxLines,
-        style: Theme.of(context).textTheme.button?.copyWith(
+        style: Theme.of(context).textTheme.labelLarge?.copyWith(
             color: color ?? Colors.white,
             height: height,
             fontWeight: fontWeight,
