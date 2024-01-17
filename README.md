@@ -1,6 +1,7 @@
 # cine_xfers
 This application is developed on Flutter 2.2.3 in the Stable channel.
-Migrated to Flutter 3.0, tested on Flutter v3.16.3 in Stable channel.
+
+Migrated to Flutter 3.0 and tested on Flutter v3.16.3 in Stable channel.
 
 ## Objective
 1. Fetch a list of movies from this URL
