@@ -33,7 +33,7 @@ class Header3 extends StatelessWidget {
         textAlign: textAlign,
         maxLines: maxLines,
         overflow: overflow,
-        style: Theme.of(context).textTheme.headline3?.copyWith(
+        style: Theme.of(context).textTheme.displaySmall?.copyWith(
             color: color ?? AppColors.blackColor,
             height: height,
             fontWeight: fontWeight,

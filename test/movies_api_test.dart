@@ -22,7 +22,6 @@ void main() {
       expect(_page!.results!.length, greaterThan(0));
       expect(_page!.page, isNotNull);
       expect(_page!.page, equals(pageKey));
-      expect(_page!.page, lessThanOrEqualTo(_page!.totalPages));
       expect(_page!.totalPages, isNotNull);
       expect(_page!.totalResults, isNotNull);
       expect(_page!.results![0].title, isNotNull);

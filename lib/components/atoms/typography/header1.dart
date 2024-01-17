@@ -28,7 +28,7 @@ class Header1 extends StatelessWidget {
     return Text(title,
         textAlign: textAlign,
         maxLines: maxLines,
-        style: Theme.of(context).textTheme.headline1?.copyWith(
+        style: Theme.of(context).textTheme.displayLarge?.copyWith(
             color: color ?? AppColors.blackColor,
             height: height,
             fontWeight: fontWeight,

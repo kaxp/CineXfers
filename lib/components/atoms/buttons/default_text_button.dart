@@ -12,13 +12,12 @@ class DefaultTextButton extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
-        primary: Colors.transparent,
+        backgroundColor: Colors.transparent,
       ),
       onPressed: onTap,
       child: Text(
         title!,
-        style: TextStyle(
-            color: Colors.white, fontFamily: AppFonts.ratBold, fontSize: 11),
+        style: TextStyle(color: Colors.white, fontFamily: AppFonts.ratBold, fontSize: 11),
       ),
     );
   }
