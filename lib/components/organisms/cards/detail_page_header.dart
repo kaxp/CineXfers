@@ -15,12 +15,7 @@ class DetailPageHeader extends StatelessWidget {
   final Result? data;
 
   const DetailPageHeader(
-      {Key? key,
-      this.imageUrl,
-      this.onTrailerTap,
-      this.onLocationTap,
-      this.onCalendarTap,
-      this.data})
+      {Key? key, this.imageUrl, this.onTrailerTap, this.onLocationTap, this.onCalendarTap, this.data})
       : super(key: key);
 
   @override
@@ -41,10 +36,7 @@ class DetailPageHeader extends StatelessWidget {
                 width: double.infinity,
                 fit: BoxFit.cover),
           ),
-          Positioned.fill(
-              child: Container(
-                  decoration:
-                      BoxDecoration(color: Colors.black.withOpacity(0.7)))),
+          Positioned.fill(child: Container(decoration: BoxDecoration(color: Colors.black.withOpacity(0.7)))),
           Padding(
             padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),
             child: Container(
@@ -105,17 +97,13 @@ class DetailPageHeader extends StatelessWidget {
                 width: 96,
                 child: ElevatedButton(
                   onPressed: () => onTrailerTap!(),
-                  style: ElevatedButton.styleFrom(
-                      primary: Colors.white.withOpacity(0.6)),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.white.withOpacity(0.6)),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(Icons.play_arrow, color: Colors.black54),
                       Text(S.current.trailer,
-                          style: TextStyle(
-                              color: Colors.black54,
-                              fontFamily: AppFonts.ratMedium,
-                              fontSize: 13))
+                          style: TextStyle(color: Colors.black54, fontFamily: AppFonts.ratMedium, fontSize: 13))
                     ],
                   ),
                 ),
@@ -139,18 +127,13 @@ class DetailPageHeader extends StatelessWidget {
       list.add(
         new Card(
             margin: EdgeInsets.only(right: 4),
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(4)),
-                side: BorderSide()),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(4)), side: BorderSide()),
             elevation: 0,
             child: Padding(
               padding: EdgeInsets.fromLTRB(8, 4, 8, 4),
               child: Text(
                 movieL[i],
-                style: new TextStyle(
-                    color: Colors.black,
-                    fontFamily: AppFonts.ratMedium,
-                    fontSize: 10),
+                style: new TextStyle(color: Colors.black, fontFamily: AppFonts.ratMedium, fontSize: 10),
               ),
             )),
       );
@@ -181,37 +164,24 @@ class DetailPageHeader extends StatelessWidget {
             children: [
               Text(
                 movieL.duration ?? " ",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: AppFonts.ratMedium,
-                    fontSize: 14),
+                style: TextStyle(color: Colors.white, fontFamily: AppFonts.ratMedium, fontSize: 14),
               ),
               Padding(
                 padding: EdgeInsets.only(left: 6, right: 6, top: 2),
-                child: Text('•',
-                    style: TextStyle(
-                        color: Colors.white, fontFamily: AppFonts.ratMedium)),
+                child: Text('•', style: TextStyle(color: Colors.white, fontFamily: AppFonts.ratMedium)),
               ),
               Text(
                 movieL.genre ?? " ",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: AppFonts.ratMedium,
-                    fontSize: 14),
+                style: TextStyle(color: Colors.white, fontFamily: AppFonts.ratMedium, fontSize: 14),
                 overflow: TextOverflow.ellipsis,
               ),
               Padding(
                 padding: EdgeInsets.only(left: 6, right: 6, top: 2),
-                child: Text('•',
-                    style: TextStyle(
-                        color: Colors.white, fontFamily: AppFonts.ratMedium)),
+                child: Text('•', style: TextStyle(color: Colors.white, fontFamily: AppFonts.ratMedium)),
               ),
               Text(
                 movieL.releaseDate ?? " ",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: AppFonts.ratMedium,
-                    fontSize: 14),
+                style: TextStyle(color: Colors.white, fontFamily: AppFonts.ratMedium, fontSize: 14),
                 overflow: TextOverflow.ellipsis,
               ),
             ],
