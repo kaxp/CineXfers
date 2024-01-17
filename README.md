@@ -1,5 +1,6 @@
 # cine_xfers
-This application is developed on Flutter 2.2.3 in Stable channel.
+This application is developed on Flutter 2.2.3 in the Stable channel.
+Migrated to Flutter 3.0, tested on Flutter v3.16.3 in Stable channel.
 
 ## Objective
 1. Fetch a list of movies from this URL
@@ -38,7 +39,7 @@ Steps for running the application-
 - For running the unit test run `flutter test test/movies_api_test.dart` command
 - For running with _Release_ build run `flutter run --release --flavor development -t lib/main_development.dart` command. Note release build should be run on physical device.
 
-
-
+## Videe
+![Alt Text](https://github.com/kaxp/CineXfers/blob/7bc096dcde960ef63dd9e9bd4155a60ebc17e69e/screenshots/android.gif)
 
 
