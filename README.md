@@ -40,7 +40,7 @@ Steps for running the application-
 - For running the unit test run `flutter test test/movies_api_test.dart` command
 - For running with _Release_ build run `flutter run --release --flavor development -t lib/main_development.dart` command. Note release build should be run on physical device.
 
-## Videe
+## Video
 ![Alt Text](https://github.com/kaxp/CineXfers/blob/7bc096dcde960ef63dd9e9bd4155a60ebc17e69e/screenshots/android.gif)
 
 
